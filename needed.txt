@@ -1,0 +1,140 @@
+Needed
+
+1. GoRouterBuilder
+2. Riverpod Generator
+3. Equatable
+4. Mocktail
+5. Mockingjay
+6. Goldentoolkit
+7. Pageobject
+8. Shouldly
+9. Given When Then Unit Test
+10. Flex Color Scheme
+11. Dynamic Color
+12. Material Color Utilities
+13. Logging
+14. Logging Appenders
+15. Catcher
+16. Intl Utils and Intl
+17. flutter portal
+18. flutter adaptive scaffold
+19. flutter animate
+20. animations
+21. matcher
+22. uuid
+23. Constrained Centered Body
+24. Boxy
+25. Side Sheets
+26. Animated Text Kit
+27. Hive
+28. GraphQL
+29. Device Preview and ScreenShot
+30. Google Fonts
+31. RxDart
+32. Lint
+33. Dart Code Metrics
+34. Shared Prefrences
+35. Flutter Secure Storage
+36. formz
+37. bloc
+38. bricks, mason cli
+39. widget view abstraction of business logic
+40. fvm
+41 url launcher url strategy
+42. state notifier
+43. hooks
+44. shape of view null safe
+45. rive
+46. auto animated
+47. dropdown_button2
+48. fluter simple treeview
+49. json serializable
+50. visibility detector
+51. cupertino onboarding
+52 flutter modal bottom sheet
+53 snapping sheet
+54 badges
+55 settings ui
+56 font awesome flutter
+57 geolocation
+58 device info plus
+59 drift
+60 network info plus
+61 chopper
+62 flutter svg
+63 dio
+64 cached network image
+65 meta
+66 usage
+67 collection
+68 matcher
+69 auto size text
+70. fl chart
+71 table calendar
+72 dartz fpdart
+73. dropdown search
+74. pinput
+75. wakelock
+76. expandable
+77. scrollable positioned list
+78. mask text input formatter
+79. flutter hooks
+80 freezed
+81. built value
+82. printing
+83. flutter map
+84. extended image
+85. introduction screen
+86. googleapis
+87. flutter speed dial
+88. awesome notifications
+89 multi select flutter
+90. bloc concurrency
+91. flutter tts
+92. validators
+93. showcaseview
+94. universal platform
+95. universal io
+96. cookie jar
+97. tutorial coach mark
+98. flutter layout grid
+99. material floating search bar
+100. flutter login
+101. bitsdoojo window
+102. liqiud swipe
+103. liquid progress indicator
+104. mason
+105. flow builder
+106. flutter launcher icons
+107. graphic
+108. home widget
+109. flutter acrylic
+110. backdrop
+111. flutter echarts
+112. feature discovery
+113. flutter app lock
+114. concentric transition
+115. sentry
+116. feedback
+117. crashanalytics
+118. Provider
+119. state notifier
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
