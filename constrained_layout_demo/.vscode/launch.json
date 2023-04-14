@@ -33,7 +33,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args":[
         "-d",
@@ -61,7 +61,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args": [
         "-d",
@@ -89,7 +89,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": true
+        "RELEASE_MODE": "true"
       },
       "args": [
         "-d",
@@ -131,7 +131,7 @@
       "cwd": "${workspaceFolder}",
       "program": "test",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args": [
         "-d",
@@ -159,7 +159,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args": [
         "-d",
@@ -187,7 +187,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args": [
         "-d",
@@ -215,7 +215,7 @@
       "cwd": "${workspaceFolder}",
       "program": "lib/main.dart",
       "env": {
-        "RELEASE_MODE": true
+        "RELEASE_MODE": "true"
       },
       "args": [
         "-d",
@@ -243,7 +243,7 @@
       "cwd": "${workspaceFolder}",
       "program": "bin/main.dart",
       "env": {
-        "RELEASE_MODE": false
+        "RELEASE_MODE": "false"
       },
       "args": [
         "--dart-define",

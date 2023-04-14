@@ -8,7 +8,7 @@
 // Note the use of shortcut methods (defined at the bottom) to make these more concise
 
 import 'dart:math';
-import 'dart:ui' as ui;
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -16,7 +16,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 
 
 class EverythingView extends StatelessWidget {
-  static ui.FragmentShader? shader;
+  
 
   const EverythingView({Key? key}) : super(key: key);
 

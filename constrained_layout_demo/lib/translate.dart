@@ -86,8 +86,8 @@ class TranslateExampleState extends State<TranslateExample> {
               color: Colors.redAccent,
               borderRadius: BorderRadius.all(Radius.circular(1000)),
             ),
-            child: const Text('----'),
             alignment: Alignment.center,
+            child: const Text('----'),
           ).applyConstraint(
             id: cId('sun'),
             size: 200,
@@ -103,8 +103,8 @@ class TranslateExampleState extends State<TranslateExample> {
               color: Colors.blue,
               borderRadius: BorderRadius.all(Radius.circular(1000)),
             ),
-            child: const Text('----'),
             alignment: Alignment.center,
+            child: const Text('----'),
           ).applyConstraint(
             id: cId('earth'),
             size: 100,
@@ -125,8 +125,8 @@ class TranslateExampleState extends State<TranslateExample> {
               color: Colors.grey,
               borderRadius: BorderRadius.all(Radius.circular(1000)),
             ),
-            child: const Text('----'),
             alignment: Alignment.center,
+            child: const Text('----'),
           ).applyConstraint(
             id: cId('moon'),
             size: 50,

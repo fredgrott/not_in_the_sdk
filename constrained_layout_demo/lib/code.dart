@@ -60,16 +60,16 @@ class CodeViewState extends State<CodeViewWidget> {
         } else {
           SingleChildScrollView(
             child: Padding(
+              padding: const EdgeInsets.only(
+                left: 20,
+                top: 20,
+              ),
               child: Text(
                 code ?? '',
                 style: const TextStyle(
                   color: Colors.black,
                   fontSize: 16,
                 ),
-              ),
-              padding: const EdgeInsets.only(
-                left: 20,
-                top: 20,
               ),
             ),
           ).applyConstraint(

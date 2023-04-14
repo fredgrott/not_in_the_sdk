@@ -8,31 +8,34 @@ import 'package:animated_treeview_demo/utils/utils.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'TreeView Modification Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'TreeView Modification Demo'),
+      home: const MyHomePage(title: 'TreeView Modification Demo'),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -107,14 +110,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget buildAddItemButton(TreeNode item) {
     return IconButton(
       onPressed: () => item.add(TreeNode()),
-      icon: Icon(Icons.add_circle, color: Colors.green),
+      icon: const Icon(Icons.add_circle, color: Colors.green),
     );
   }
 
   Widget buildRemoveItemButton(TreeNode item) {
     return IconButton(
       onPressed: () => item.delete(),
-      icon: Icon(Icons.delete, color: Colors.red),
+      icon: const Icon(Icons.delete, color: Colors.red),
     );
   }
 
@@ -124,12 +127,12 @@ class _MyHomePageState extends State<MyHomePage> {
       child: TextButton.icon(
         style: TextButton.styleFrom(
           foregroundColor: Colors.green[800],
-          shape: RoundedRectangleBorder(
+          shape: const RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(4)),
           ),
         ),
-        icon: Icon(Icons.add_circle, color: Colors.green),
-        label: Text("Add Child", style: TextStyle(color: Colors.green)),
+        icon: const Icon(Icons.add_circle, color: Colors.green),
+        label: const Text("Add Child", style: TextStyle(color: Colors.green)),
         onPressed: () => item.add(TreeNode()),
       ),
     );
@@ -141,12 +144,12 @@ class _MyHomePageState extends State<MyHomePage> {
       child: TextButton.icon(
           style: TextButton.styleFrom(
             foregroundColor: Colors.red[800],
-            shape: RoundedRectangleBorder(
+            shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(4)),
             ),
           ),
-          icon: Icon(Icons.delete, color: Colors.red),
-          label: Text("Clear All", style: TextStyle(color: Colors.red)),
+          icon: const Icon(Icons.delete, color: Colors.red),
+          label: const Text("Clear All", style: TextStyle(color: Colors.red)),
           onPressed: () => item.clear()),
     );
   }

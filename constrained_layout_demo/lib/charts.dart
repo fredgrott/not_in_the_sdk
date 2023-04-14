@@ -47,7 +47,7 @@ class ChartsState extends State<ChartsExample> {
   @override
   void initState() {
     super.initState();
-    xTitles = [for (int i = 0; i < 60; i++) '$i'.padLeft(2, '0') + ':00'];
+    xTitles = [for (int i = 0; i < 60; i++) '${'$i'.padLeft(2, '0')}:00'];
     Random random = Random();
     data = [for (int i = 0; i < xTitles.length; i++) 10 + random.nextInt(91)];
     compareData = data.toList()..shuffle();
@@ -63,10 +63,11 @@ class ChartsState extends State<ChartsExample> {
         codePath: 'lib/charts.dart',
       ),
       body: Scrollbar(
-        isAlwaysShown: true,
+        thumbVisibility: true,
         controller: controller,
         child: SingleChildScrollView(
           controller: controller,
+          scrollDirection: Axis.horizontal,
           child: ConstraintLayout(
             width: wrapContent,
             children: [
@@ -107,12 +108,12 @@ class ChartsState extends State<ChartsExample> {
                     });
                   },
                   child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
                     child: Container(
                       color: i == current
                           ? Colors.deepOrange
                           : Colors.orangeAccent,
                     ),
-                    cursor: SystemMouseCursors.click,
                   ),
                 ).applyConstraint(
                   id: cId('data$i'),
@@ -183,13 +184,13 @@ class ChartsState extends State<ChartsExample> {
                   color: Colors.blue,
                   borderRadius: BorderRadius.all(Radius.circular(4)),
                 ),
+                padding: const EdgeInsets.all(5),
                 child: Text(
                   '${data[current]}',
                   style: const TextStyle(
                     color: Colors.white,
                   ),
                 ),
-                padding: const EdgeInsets.all(5),
               ).applyConstraint(
                 outTopCenterTo: cId('data$current').bottomMargin(33),
               ),
@@ -198,19 +199,18 @@ class ChartsState extends State<ChartsExample> {
                   color: Colors.grey,
                   borderRadius: BorderRadius.all(Radius.circular(4)),
                 ),
+                padding: const EdgeInsets.all(5),
                 child: Text(
                   '${compareData[current]}',
                   style: const TextStyle(
                     color: Colors.white,
                   ),
                 ),
-                padding: const EdgeInsets.all(5),
               ).applyConstraint(
                 outTopCenterTo: cId('data$current').bottomMargin(65),
               )
             ],
           ),
-          scrollDirection: Axis.horizontal,
         ),
       ),
     );

@@ -2,7 +2,7 @@
 // Copyright (c) 2022, Grant Skinner All rights reserved.
 
 
-import 'dart:ui';
+
 
 
 import 'package:flutter/material.dart';
@@ -15,18 +15,10 @@ import 'examples/visual_view.dart';
 
 void main() {
   runApp(const MyApp());
-  _loadShader(); // this is a touch hacky, but works for now.
+  // this is a touch hacky, but works for now.
 }
 
-Future<void> _loadShader() async {
-  return FragmentProgram.fromAsset('assets/shaders/shader.frag').then(
-      (FragmentProgram prgm) {
-    EverythingView.shader = prgm.fragmentShader();
-  }, onError: (Object error, StackTrace stackTrace) {
-    FlutterError.reportError(
-        FlutterErrorDetails(exception: error, stack: stackTrace));
-  });
-}
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -34,6 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      
       title: 'Flutter Animate Demo',
       debugShowCheckedModeBanner: false,
       home: FlutterAnimateExample(),

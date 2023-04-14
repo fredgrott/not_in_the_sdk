@@ -36,7 +36,7 @@ class OpenGrammarExample extends StatelessWidget {
         }
 
         for (int i = 0; i < 5; i++) {
-          Row().open(() {
+          const Row().open(() {
             for (int j = 0; j < 10; j++) {
               Text("$i x $j").enter();
               const SizedBox(

@@ -13,6 +13,7 @@ import 'shared_axis_transition.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData.from(
         colorScheme: const ColorScheme.light(),
       ).copyWith(

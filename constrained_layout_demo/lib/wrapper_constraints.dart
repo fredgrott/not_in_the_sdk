@@ -99,7 +99,7 @@ class WrapperConstraintsExampleState extends State<WrapperConstraintsExample> {
             outTopLeftTo: rId(1),
             layoutCallback: (_, rect) {
               rightX = rect.left;
-              WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+              WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
                 setState(() {});
               });
             },

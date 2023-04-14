@@ -19,6 +19,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),
@@ -48,15 +49,15 @@ class _MyAppState extends State<MyApp> {
                   minAnimationDuration: const Duration(seconds: 3),
                   children: <Widget>[
                     Image.network(
-                      "https://unsplash.com/photos/y2azHvupCVo",
+                      "https://photos.google.com/album/AF1QipPg4cSFhiX03mvXOH70YvcNo81Wq8t8GMFNOVrt/photo/AF1QipOQ2YvLe1FUWC_4tj1zUvPKyJQRyLTTQWbvHvJR",
                       fit: BoxFit.cover,
                     ),
                     Image.network(
-                      "https://cdn.getyourguide.com/img/location_img-59-1969619245-148.jpg",
+                      "https://photos.google.com/album/AF1QipPg4cSFhiX03mvXOH70YvcNo81Wq8t8GMFNOVrt/photo/AF1QipPbjnfJv8yNcHc_zjDdjimCkPH76o8MillsY2fy",
                       fit: BoxFit.cover,
                     ),
                     Image.network(
-                      "https://www.theglobeandmail.com/resizer/vq3O7LI3hvsjTP2N0m9NwU4W3Eg=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/4ETF3GZR3NA3RDDW23XDRBKKCI",
+                      "https://photos.google.com/album/AF1QipPg4cSFhiX03mvXOH70YvcNo81Wq8t8GMFNOVrt/photo/AF1QipPjvRZn7vE_MkMvelUR2PPX8Vf8NrTLy8Kd6DzQ",
                       fit: BoxFit.cover,
                     ),
                   ],
